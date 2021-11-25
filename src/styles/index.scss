@@ -1,0 +1,17 @@
+@import 'colors.scss';
+
+body {
+    background-color: $background;
+    color: $text;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: $background;
+    color: $text_dark;
+    font-size: 2rem;
+}

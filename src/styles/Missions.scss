@@ -1,0 +1,33 @@
+@import 'colors.scss';
+
+
+.Missions{
+    display: flex;
+    flex-wrap: wrap;
+    color: $text_dark;
+    text-decoration: none;
+
+    Link{
+        text-decoration: none;
+        height: 100%;
+    }
+
+    h1 {
+        flex-basis: 100%;
+        text-decoration: none;
+    }
+    .title{
+        text-align: center;
+        color: $text;
+    }
+
+    .Mission-image{
+        max-width: 100%;
+    }
+
+    .Paper-body{
+        flex-basis: 100%;
+        padding: 1rem;
+        height: max-content;
+    }
+}
