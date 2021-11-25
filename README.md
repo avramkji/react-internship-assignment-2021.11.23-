@@ -4,7 +4,7 @@ Versions:
 Package information can be found in package.json.
 
 Use commands:
-npm install
-npm start 
+  - npm install
+  - npm start 
 
 to run the code.
