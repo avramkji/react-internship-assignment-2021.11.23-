@@ -13,9 +13,9 @@ const Missions = ({missions}) => {
                 <h1 className="title">Missions</h1>
                 
                     {missions.map(mission => (
-                        <Grid item xs={12} md={4} >
-                            <Link key={mission.id}  to={pathname: } style={{textDecoration: 'none'}}>
-                                {console.log(mission.rocket.rocket.id)}
+                        <Grid item key={mission.id} xs={12} md={4} >
+                            {console.log("Missions before link: ", mission.rocket.rocket.id)}
+                            <Link to={`/rocket/${mission.rocket.rocket.id}`} style={{textDecoration: 'none'}}>
                                 <Paper>
                                     <div>
                                         <img 

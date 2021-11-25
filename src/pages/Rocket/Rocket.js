@@ -29,7 +29,7 @@ const GET_ROCKET_INFO = gql`
 `;
 
 const Rocket = ({ match }) => {
-    // console.log(match.params.rocketId);
+    console.log("match", match);
   const rocketId = match.params.rocketId;
 
   const { data, loading, error } = useQuery(GET_ROCKET_INFO, {
