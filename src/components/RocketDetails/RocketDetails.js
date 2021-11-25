@@ -19,7 +19,7 @@ const RocketDetails = ({ rocket }) => {
   return (
     <Fragment>
       <div className="RocketDetails">
-        <TableContainer style={{width:'65%'}} component={Paper}>
+        <TableContainer style={{maxWidth:'70%'}} component={Paper}>
           <Table size="small" aria-label="simple table">
             <TableHead>
               <TableRow>

@@ -7,7 +7,7 @@ import '../../styles/index.scss';
 
 const GET_DATA = gql`
     {
-        launchesPast(limit: 6) {
+        launchesPast {
         mission_name
         launch_site {
             site_name_long

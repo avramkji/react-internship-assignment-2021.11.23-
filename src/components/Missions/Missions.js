@@ -17,12 +17,15 @@ const Missions = ({missions}) => {
                             {console.log("Missions before link: ", mission.rocket.rocket.id)}
                             <Link to={`/rocket/${mission.rocket.rocket.id}`} style={{textDecoration: 'none'}}>
                                 <Paper>
-                                    <div>
-                                        <img 
-                                            src={mission.links.flickr_images[0] || 'https://upload.wikimedia.org/wikipedia/commons/2/22/Falcon_9_close_up.jpeg'} 
-                                            alt={`Rocket for ${mission.mission_name} mission`} 
-                                            className="Mission-image"
-                                        />
+                                    <div className="Mission">
+                                        <div className="Paper-head">
+                                            <img 
+                                                src={mission.links.flickr_images[0] || 'https://upload.wikimedia.org/wikipedia/commons/2/22/Falcon_9_close_up.jpeg'} 
+                                                alt={`Rocket for ${mission.mission_name} mission`} 
+                                                className="Mission-image"
+                                            />
+                                        </div>
+                                        
                                         <div className="Paper-body">
                                             <h2>{mission.mission_name}</h2>
                                             <p>
